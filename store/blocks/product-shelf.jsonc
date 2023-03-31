@@ -1,0 +1,28 @@
+{
+  "list-context.product-list#pdp-shelf": {
+    "blocks": ["product-summary.shelf#pdp-summary"],
+    "children": ["slider-layout#pdp-shelf"]
+  },
+
+  "slider-layout#pdp-shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "pdp-shelf"
+    }
+  },
+
+  "product-summary.shelf#pdp-summary": {
+    "children": [
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-image",
+      "product-summary-price"
+    ]
+  }
+}

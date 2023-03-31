@@ -1,0 +1,54 @@
+{
+  "tab-layout#pdp": {
+    "children": [
+      "tab-list#pdp",
+      "tab-content#pdp"
+    ],
+    "props": {
+      "blockClass": "pdp-tabs",
+      "defaultActiveTabId": "description"
+    }
+  },
+  "tab-list#pdp": {
+    "children": [
+      "tab-list.item#pdp-description",
+      "tab-list.item#pdp-specifications"
+    ]
+  },
+  "tab-list.item#pdp-description": {
+    "props": {
+      "tabId": "description",
+      "label": "PDP 1",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#pdp-specifications": {
+    "props": {
+      "tabId": "specifications",
+      "label": "PDP 2"
+    }
+  },
+
+  "tab-content#pdp": {
+    "children": [
+      "tab-content.item#description",
+      "tab-content.item#specifications"
+    ]
+  },
+  "tab-content.item#description": {
+    "children": [
+      "product-description#pdp"
+    ],
+    "props": {
+      "tabId": "description"
+    }
+  },
+  "tab-content.item#specifications": {
+    "children": [
+      "product-specifications#pdp"
+    ],
+    "props": {
+      "tabId": "specifications"
+    }
+  }
+}
